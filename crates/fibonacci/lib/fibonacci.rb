@@ -1,7 +1,7 @@
-require "helix_runtime"
+require 'helix_runtime'
 
 begin
-  require "fibonacci/native"
+  require 'fibonacci/native'
 rescue LoadError
-  warn "Unable to load fibonacci/native. Please run `rake build`"
+  warn 'Unable to load fibonacci/native. Please run `rake build`'
 end
