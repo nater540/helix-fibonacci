@@ -5,3 +5,5 @@
 3) Build the native gem       -> `rake build`
 4) Start the rails server     -> `rails s`
 5) Open the benchmark page    -> `http://localhost:3000/benchmark/42` _(Replace `42` with any number you want to calculate a fibonacci sequence for)_
+
+[Helix - Native Ruby Extensions](https://usehelix.com)
