@@ -1,0 +1,40 @@
+[[package]]
+name = "cstr-macro"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "fibonacci"
+version = "0.1.0"
+dependencies = [
+ "helix 0.7.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "helix"
+version = "0.7.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "cstr-macro 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libc 0.2.51 (registry+https://github.com/rust-lang/crates.io-index)",
+ "libcruby-sys 0.7.5 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.51"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "libcruby-sys"
+version = "0.7.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.2.51 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum cstr-macro 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "db53fddba18cdd35477a7213a3ef6acfbfa333c31b42ce019e544c4a1420a06f"
+"checksum helix 0.7.5 (registry+https://github.com/rust-lang/crates.io-index)" = "49a017e3e798ad9386e0a0584e66fd6c04a80ccc1242eb8f689c62ce6f408240"
+"checksum libc 0.2.51 (registry+https://github.com/rust-lang/crates.io-index)" = "bedcc7a809076656486ffe045abeeac163da1b558e963a31e29fbfbeba916917"
+"checksum libcruby-sys 0.7.5 (registry+https://github.com/rust-lang/crates.io-index)" = "fef6028cdce0c8d55676fd1d66bb810facef8cade0dd71d28511d375e84da4c0"

@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: <%= ENV['HELIX_TEST_DATABASE_USERNAME'] || 'nate' %>
+  password: <%= ENV['HELIX_TEST_DATABASE_PASSWORD'] || 'magical1' %>
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: helix_test_development
+
+test:
+  <<: *default
+  database: helix_test_test
+
+production:
+  <<: *default
+  database: helix_test_production
+  username: <%= ENV['HELIX_TEST_DATABASE_USERNAME'] %>
+  password: <%= ENV['HELIX_TEST_DATABASE_PASSWORD'] %>
