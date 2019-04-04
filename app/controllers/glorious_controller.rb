@@ -21,6 +21,7 @@ class GloriousController < ApplicationController
     moar_powar = (moar_powar / rust_benchmark.real * 100).round
 
     render json: {
+      description: "Calculated the fibonacci sequence for `#{calculate}`",
       improvement: "Rust was #{moar_powar}% faster than Ruby",
       ruby: {
         value: ruby_value,
