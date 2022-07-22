@@ -191,7 +191,7 @@ GEM
     thread_safe (0.3.6)
     tilt (2.0.9)
     tomlrb (1.2.8)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     web-console (3.7.0)
       actionview (>= 5.0)
